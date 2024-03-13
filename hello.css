@@ -1,0 +1,36 @@
+.title {
+    border:3px solid black;
+    margin: 10px;
+}
+
+.titleText, .links {
+    display:inline-block;
+}
+
+.links {
+    border:3px solid black;
+}
+
+.titleText, .acompTextHeading, .linkAcomplishments, .links {
+    text-align: center;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:  xx-large;
+    
+}
+
+.b1, .b2, .b3, .b4{
+    display:inline-block;
+    position: relative;
+    margin: 5px;
+    float:left;
+    width: calc(25% - 10px);
+    height:400px;
+    background-color: lightgrey;
+}
+
+.acompText {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
