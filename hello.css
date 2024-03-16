@@ -11,7 +11,7 @@
     border:3px solid black;
 }
 
-.titleText, .acompTextHeading, .linkAcomplishments, .links {
+.titleText, .acompTextHeading, .linkAcomplishments, .links, .aboutMeTitle, .devAccompTitle, .lines {
     text-align: center;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -34,3 +34,26 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
 }
+
+.aboutMe {
+    display:inline-block;
+    position: relative;
+    margin: 5px;
+    width: 800px;
+    height:800px;
+    background-color: coral;
+}
+
+.devAccomp {
+    display:inline-block;
+    position: relative;
+    margin: 5px;
+    width: 800px;
+    height: 300px;
+    background-color: coral;
+}
+
+#target { 
+    display: none;
+}
+
