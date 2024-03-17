@@ -36,8 +36,8 @@
 }
 
 .aboutMe {
-    display:inline-block;
-    position: relative;
+    /* display:inline-block;
+    position: relative; */
     margin: 5px;
     width: 800px;
     height:800px;
@@ -45,8 +45,8 @@
 }
 
 .devAccomp {
-    display:inline-block;
-    position: relative;
+    /* display:inline-block;
+    position: relative; */
     margin: 5px;
     width: 800px;
     height: 300px;
@@ -57,3 +57,21 @@
     display: none;
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}

@@ -19,7 +19,10 @@ window.addEventListener('scroll', function(){
   if(window.scrollY > 100 && !scrolled) {
     scrolled = true;
     console.log('new section')
-    document.getElementById('target').style.display="block"
+    const targetElement = document.getElementById('target')
+    targetElement.style.display = "block"
+    targetElement.classList.remove("hidden")
+    targetElement.classList.add("visible")
     animateValue("value", 0, 2000, 1);
   }
 })
