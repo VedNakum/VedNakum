@@ -20,9 +20,8 @@ window.addEventListener('scroll', function(){
     scrolled = true;
     console.log('new section')
     const targetElement = document.getElementById('target')
-    targetElement.style.display = "block"
-    targetElement.classList.remove("hidden")
-    targetElement.classList.add("visible")
+    targetElement.style.display = "block" 
+    targetElement.style.animation = "fade-down 0.5s" 
     animateValue("value", 0, 2000, 1);
   }
 })

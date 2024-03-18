@@ -1,6 +1,7 @@
 .title {
     border:3px solid black;
     margin: 10px;
+    animation: titleDown 1s;
 }
 
 .titleText, .links {
@@ -50,11 +51,12 @@
     margin: 5px;
     width: 800px;
     height: 300px;
-    background-color: coral;
+    background-color: rgb(59, 202, 41);
 }
 
 #target { 
     display: none;
+    animation: none;
 }
 
 .container {
@@ -64,14 +66,52 @@
     flex-wrap: wrap;
 }
 
-.hidden {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+.accomplishments {
+    animation: slide-in 2s
 }
 
-.visible {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+.linkAcomplishments {
+    animation: down 1.5s;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-2000px) scale(1);
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-400px) scale(1);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes titleDown {
+    0% {
+        transform: translateY(-200px) scale(1);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1);
+    }
 }
