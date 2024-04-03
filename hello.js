@@ -1,3 +1,9 @@
+function onStart() {
+  const popUp = document.getElementById('popUp')
+  popUp.style.display = "block"
+  alert(popUp.content)
+}
+
 function animateValue(id, start, end, duration) {
   if (start === end) return;
   var range = end - start;
@@ -23,5 +29,21 @@ window.addEventListener('scroll', function(){
     targetElement.style.display = "block" 
     targetElement.style.animation = "fade-down 0.5s" 
     animateValue("value", 0, 2000, 1);
+    animateValue("value1", 0, 500, 1);
+    animateValue("value2", 0, 20, 2);
   }
 })
+
+if(window.innerWidth == screen.width && window.innerHeight == screen.height) {
+} else {
+  onStart()
+}
+
+function openFullscreen() {
+  var elem = document.getElementById("html");
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+    const popUp = document.getElementById('popUp')
+    popUp.style.display = "none"
+  }
+}

@@ -50,7 +50,7 @@
     position: relative; */
     margin: 5px;
     width: 800px;
-    height: 300px;
+    height: 800px;
     background-color: rgb(59, 202, 41);
 }
 
@@ -72,6 +72,24 @@
 
 .linkAcomplishments {
     animation: down 1.5s;
+}
+
+.boxOne, .boxTwo, .boxThree, .boxFour {
+    display: inline-block;
+    background-color: black;
+    margin: 5px;
+}
+
+.whiteBold {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-emphasis: bold;
+    font-size: 75px;
+
+}
+
+#popUp {
+    display: none;
 }
 
 @keyframes fade-down {
