@@ -1,4 +1,7 @@
-location.replace("https://vednakum.github.io/VedNakum/index.html")
+window.onload = function() {
+  // similar behavior as clicking on a link
+  window.location.href = "https://vednakum.github.io/VedNakum/index.html";
+}
 
 function animateValue(id, start, end, duration) {
   if (start === end) return;
