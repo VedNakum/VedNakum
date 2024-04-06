@@ -27,3 +27,11 @@ window.addEventListener('scroll', function(){
     animateValue("value2", 0, 20, 2);
   }
 })
+
+window.onload = function() {
+  var path = window.location.pathname;
+  if (path.endsWith('.html')) {
+      var newPath = path.substring(0, path.length - 5); // Remove the .html extension
+      window.history.replaceState({}, document.title, newPath);
+  }
+};

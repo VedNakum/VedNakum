@@ -33,7 +33,7 @@
 .acompText {
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
+    font-size: 150%;
 }
 
 .aboutMe {
@@ -83,7 +83,7 @@
 .whiteBold {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-    text-emphasis: bold;
+    text-decoration: bold;
     font-size: 75px;
 
 }
