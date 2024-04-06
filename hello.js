@@ -1,3 +1,5 @@
+location.replace("https://vednakum.github.io/VedNakum/index.html")
+
 function animateValue(id, start, end, duration) {
   if (start === end) return;
   var range = end - start;
@@ -35,3 +37,25 @@ window.onload = function() {
       window.history.replaceState({}, document.title, newPath);
   }
 };
+
+const numParticles = 50;
+  const container = document.querySelector('.space'); // Changed to select .space div
+  for (let i = 0; i < numParticles; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    container.appendChild(particle);
+    resetParticle(particle);
+  }
+
+  // Reset particle position
+  function resetParticle(particle) {
+    const size = Math.random() * 4 + 1; // Random size between 1 and 5px
+    const x = Math.random() * container.offsetWidth; // Use container width
+    const y = Math.random() * container.offsetHeight; // Use container height
+    const duration = Math.random() * 5 + 2; // Random duration between 2 and 7s
+    particle.style.width = size + 'px';
+    particle.style.height = size + 'px';
+    particle.style.left = x + 'px';
+    particle.style.top = y + 'px';
+    particle.style.animationDuration = duration + 's';
+  }
